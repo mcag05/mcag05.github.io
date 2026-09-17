@@ -2,54 +2,61 @@
 
 :root {
     --background: #06111f;
-    --surface: #0a1929;
     --text: #edf5ff;
     --muted: #70859b;
     --accent: #79cfff;
     --line: rgba(121, 207, 255, 0.18);
 }
 
+/* RESET */
+
 * {
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
-    background: var(--background);
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
-h1, h2, h3 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-}
-
-p {
-    color: var(--muted);
+body {
+    background: #06111f;
+    color: #edf5ff;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+
+/* HEADER */
+
 .hud-header {
+    width: 92%;
     height: 110px;
-    margin: 0 4vw;
+    margin: 0 auto;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid rgba(121, 207, 255, 0.18);
 }
 
 .identity h1 {
     margin: 0;
 
+    font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
-    color: var(--text);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+
+    color: #edf5ff;
 }
 
 .identity p {
@@ -59,11 +66,13 @@ a {
     font-size: 12px;
     letter-spacing: 0.18em;
 
-    color: var(--muted);
+    color: #70859b;
 }
 
 .navigation {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 40px;
 }
 
@@ -72,79 +81,95 @@ a {
     font-size: 13px;
     letter-spacing: 0.15em;
 
-    color: var(--muted);
+    color: #70859b;
 
     transition: color 0.2s ease;
 }
 
 .navigation a:hover {
-    color: var(--accent);
+    color: #79cfff;
 }
 
 .system-status {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
 
     font-family: 'Rajdhani', sans-serif;
     font-size: 12px;
     letter-spacing: 0.12em;
 
-    color: var(--muted);
+    color: #70859b;
 }
 
 .status-dot {
+    display: block;
+
     width: 6px;
     height: 6px;
 
-    background: var(--accent);
     border-radius: 50%;
+    background: #79cfff;
 
-    box-shadow: 0 0 8px var(--accent);
+    box-shadow: 0 0 10px #79cfff;
 }
+
+/* HERO */
+
 .hero {
-    min-height: calc(100vh - 110px);
-    margin: 0 4vw;
+    width: 92%;
+    height: calc(100vh - 110px);
+    min-height: 600px;
+    margin: 0 auto;
 
     position: relative;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .hero-content {
-    max-width: 900px;
-    width: 100%;
+    width: min(70%, 1000px);
 }
 
 .hero-label {
-    margin-bottom: 18px;
+    margin: 0 0 20px;
 
     font-family: 'Rajdhani', sans-serif;
     font-size: 12px;
     letter-spacing: 0.28em;
 
-    color: var(--accent);
+    color: #79cfff;
 }
 
 .hero-content h2 {
     margin: 0;
 
-    font-size: clamp(55px, 7vw, 115px);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(64px, 7vw, 120px);
+    font-weight: 500;
     line-height: 0.88;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
 
-    color: var(--text);
+    color: #edf5ff;
 }
 
 .hero-description {
-    max-width: 440px;
-    margin-top: 30px;
+    width: 440px;
+    max-width: 100%;
+    margin: 32px 0 0;
 
     font-size: 14px;
+    font-weight: 300;
     line-height: 1.7;
+
+    color: #70859b;
 }
+
+/* LEFT HUD INDEX */
 
 .hero-index {
     position: absolute;
@@ -162,15 +187,17 @@ a {
     font-size: 10px;
     letter-spacing: 0.15em;
 
-    color: var(--muted);
+    color: #70859b;
 }
 
 .index-line {
     width: 1px;
     height: 70px;
 
-    background: var(--line);
+    background: rgba(121, 207, 255, 0.18);
 }
+
+/* BOTTOM-RIGHT DATA */
 
 .hero-data {
     position: absolute;
@@ -178,6 +205,7 @@ a {
     bottom: 45px;
 
     display: flex;
+    flex-direction: row;
     gap: 45px;
 }
 
@@ -190,9 +218,9 @@ a {
 .data-label {
     font-family: 'Rajdhani', sans-serif;
     font-size: 9px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.20em;
 
-    color: var(--muted);
+    color: #70859b;
 }
 
 .data-value {
@@ -200,9 +228,9 @@ a {
     font-size: 13px;
     letter-spacing: 0.12em;
 
-    color: var(--text);
+    color: #edf5ff;
 }
 
 .data-value.active {
-    color: var(--accent);
+    color: #79cfff;
 }
