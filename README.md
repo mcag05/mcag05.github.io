@@ -1,16 +1,27 @@
-## Hi there 👋
+# Mia Cagann — Engineering Portfolio
 
-<!--
-**mcag05/mcag05** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Personal engineering portfolio documenting independent projects across physical computing, electronics, display hardware, fabrication, and software.
 
-Here are some ideas to get you started:
+## Featured Projects
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### O.W.L.S.
+**Optical Weather Live-Visualization System**
+
+An in-development optical weather visualization system combining embedded computing, optical design, physical design, and procedural graphics.
+
+**Status:** Active Development / Build 00
+
+### Virtual Window
+**Custom 4K Architectural Display**
+
+A disassembled 43-inch 4K display rebuilt as a purpose-designed architectural digital window, incorporating custom enclosure design, thermal considerations, fabrication, and dedicated computing hardware.
+
+**Status:** Active Development
+
+## Portfolio
+
+**[View Portfolio](https://mcag05.github.io/)**
+
+---
+
+Built and documented by Mia Cagann.
