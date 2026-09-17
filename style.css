@@ -237,3 +237,56 @@ a {
 .data-value.active {
     color: #79cfff;
 }
+/* PROJECTS */
+
+.projects {
+    width: 92%;
+    margin: 0 auto;
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: end;
+}
+
+.section-number {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+}
+
+.section-title p {
+    margin: 0 0 10px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+
+    color: var(--accent);
+}
+
+.section-title h2 {
+    margin: 0;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+
+    color: var(--text);
+}
+
+.section-count {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+
+    color: var(--muted);
+}
