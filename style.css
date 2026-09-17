@@ -1,33 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rajdhani:wght@400;500;600&display=swap');
 
-
-/* ============================================================
-   SYSTEM
-============================================================ */
-
 :root {
     --background: #06111f;
     --surface: #091827;
-
     --text: #edf5ff;
     --muted: #70859b;
     --accent: #79cfff;
-
     --line: rgba(121, 207, 255, 0.18);
-
     --page: 92%;
 }
-
 
 * {
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 html,
 body {
@@ -35,31 +24,25 @@ body {
     padding: 0;
 }
 
-
 body {
     background: var(--background);
     color: var(--text);
-
     font-family: 'Inter', Arial, sans-serif;
 }
-
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-
 .active {
     color: var(--accent) !important;
 }
-
 
 .eyebrow {
     font-family: 'Rajdhani', sans-serif;
     font-size: 10px;
     letter-spacing: 0.28em;
-
     color: var(--accent);
 }
 
@@ -71,7 +54,6 @@ a {
 .site-header {
     width: var(--page);
     height: 68px;
-
     margin: 0 auto;
 
     display: flex;
@@ -81,79 +63,60 @@ a {
     border-bottom: 1px solid var(--line);
 }
 
-
 .identity {
     display: flex;
     align-items: baseline;
-
     gap: 16px;
 }
 
-
 .identity strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 18px;
     font-weight: 500;
-
     letter-spacing: 0.14em;
 }
 
-
 .identity span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.16em;
-
     color: var(--muted);
 }
-
 
 .navigation {
     display: flex;
     align-items: center;
-
     gap: 14px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 11px;
     letter-spacing: 0.15em;
 }
 
-
 .navigation a {
     color: var(--muted);
-
     transition: color 0.2s ease;
 }
-
 
 .navigation a:hover {
     color: var(--accent);
 }
 
-
 .navigation > span {
     color: var(--line);
 }
 
-
 .system-status {
     display: flex;
     align-items: center;
-
     gap: 7px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.15em;
 
     color: var(--muted);
 }
-
 
 .status-dot {
     width: 5px;
@@ -162,7 +125,6 @@ a {
     border-radius: 50%;
 
     background: var(--accent);
-
     box-shadow: 0 0 6px var(--accent);
 }
 
@@ -173,10 +135,8 @@ a {
 
 .hero {
     width: var(--page);
-
     height: calc(100vh - 68px);
     min-height: 650px;
-
     margin: 0 auto;
 
     position: relative;
@@ -186,41 +146,32 @@ a {
     justify-content: center;
 }
 
-
 .hero-main {
     width: 70%;
 }
-
 
 .hero-main h1 {
     margin: 20px 0 0;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(70px, 7vw, 120px);
     font-weight: 500;
-
     line-height: 0.86;
-
     letter-spacing: -0.02em;
 }
-
 
 .hero-main p {
     margin: 30px 0 0;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .hero-index {
     position: absolute;
-
     left: 0;
     top: 50%;
 
@@ -229,17 +180,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 12px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.15em;
 
     color: var(--muted);
 }
-
 
 .hero-index div {
     width: 1px;
@@ -248,43 +196,33 @@ a {
     background: var(--line);
 }
 
-
 .hero-meta {
     position: absolute;
-
     right: 0;
     bottom: 45px;
 
     display: flex;
-
     gap: 45px;
 }
-
 
 .hero-meta div {
     display: flex;
     flex-direction: column;
-
     gap: 5px;
 }
 
-
 .hero-meta span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .hero-meta strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 12px;
     font-weight: 400;
-
     letter-spacing: 0.12em;
 }
 
@@ -295,14 +233,11 @@ a {
 
 .work {
     width: var(--page);
-
     margin: 0 auto;
-
     padding: 90px 0 170px;
 
     border-top: 1px solid var(--line);
 }
-
 
 .work-heading {
     display: flex;
@@ -311,7 +246,6 @@ a {
     margin-bottom: 150px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.2em;
 
@@ -327,11 +261,9 @@ a {
     margin-bottom: 230px;
 }
 
-
 .project:last-child {
     margin-bottom: 0;
 }
-
 
 .project-topline {
     display: flex;
@@ -342,17 +274,14 @@ a {
     border-top: 1px solid var(--line);
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .project-title {
     width: 78%;
-
     margin: 55px auto 65px;
 
     display: flex;
@@ -360,40 +289,30 @@ a {
     justify-content: space-between;
 }
 
-
 .project-title h2 {
     margin: 0;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(70px, 8vw, 130px);
     font-weight: 400;
-
     line-height: 0.78;
-
     letter-spacing: 0.01em;
 }
-
 
 .project-title p {
     margin: 0 0 5px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
-
     line-height: 1.5;
-
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .project-right .project-title {
     flex-direction: row-reverse;
 }
-
 
 .project-right .project-title p {
     text-align: right;
@@ -406,36 +325,28 @@ a {
 
 .project-image {
     width: 78%;
-
     aspect-ratio: 16 / 9;
-
     margin: 0 auto;
 
     display: block;
-
     position: relative;
 
     overflow: hidden;
 
     border: 1px solid var(--line);
-
     background: var(--surface);
 }
-
 
 .project-left .project-image {
     margin-left: 8%;
 }
 
-
 .project-right .project-image {
     margin-right: 8%;
 }
 
-
 .image-grid {
     position: absolute;
-
     inset: 0;
 
     opacity: 0.55;
@@ -447,82 +358,66 @@ a {
     background-size: 75px 75px;
 }
 
-
 .project-image::after,
 .case-visual::after {
     content: "";
 
     position: absolute;
-
     inset: 11%;
 
     border: 1px solid var(--line);
 }
 
-
 .image-label {
     position: absolute;
-
     left: 20px;
     top: 18px;
 
     z-index: 2;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .image-center {
     position: absolute;
-
     inset: 0;
 
     z-index: 2;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 }
 
-
 .image-center > span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(40px, 5vw, 80px);
-
     letter-spacing: 0.12em;
 }
-
 
 .image-center small {
     margin-top: 10px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .image-code {
     position: absolute;
-
     right: 20px;
     bottom: 18px;
 
     z-index: 2;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.18em;
 
@@ -536,47 +431,37 @@ a {
 
 .project-bottom {
     width: 78%;
-
     margin: 35px auto 0;
 
     display: grid;
-
     grid-template-columns: 2fr 1.5fr auto;
-
     gap: 60px;
 
     align-items: start;
 }
 
-
 .project-summary {
     max-width: 480px;
-
     margin: 0;
 
     font-size: 13px;
     font-weight: 300;
-
     line-height: 1.8;
 
     color: var(--muted);
 }
 
-
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-
     gap: 6px 16px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.16em;
 
     color: var(--muted);
 }
-
 
 .project-link {
     padding-bottom: 5px;
@@ -586,13 +471,11 @@ a {
     white-space: nowrap;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.18em;
 
     color: var(--text);
 }
-
 
 .project-link:hover {
     color: var(--accent);
@@ -605,86 +488,67 @@ a {
 
 .about {
     width: var(--page);
-
     margin: 0 auto;
-
     padding: 80px 0 140px;
 
     border-top: 1px solid var(--line);
 }
 
-
 .about-heading {
     margin-bottom: 100px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .about-layout {
     width: 78%;
-
     margin: 0 auto;
 
     display: grid;
-
     grid-template-columns: 1.5fr 2fr 1fr;
-
     gap: 80px;
 }
-
 
 .about-name h2 {
     margin: 0 0 8px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 32px;
     font-weight: 400;
-
     letter-spacing: 0.08em;
 }
 
-
 .about-name span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .about-text p {
     margin: 0 0 25px;
 
     font-size: 13px;
     font-weight: 300;
-
     line-height: 1.8;
 
     color: var(--muted);
 }
 
-
 .about-links {
     display: flex;
     flex-direction: column;
-
     gap: 10px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.16em;
 }
-
 
 .about-links a:hover {
     color: var(--accent);
@@ -697,9 +561,7 @@ a {
 
 .footer {
     width: var(--page);
-
     min-height: 75px;
-
     margin: 0 auto;
 
     display: flex;
@@ -709,7 +571,6 @@ a {
     border-top: 1px solid var(--line);
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.18em;
 
@@ -723,92 +584,69 @@ a {
 
 .case-hero {
     width: var(--page);
-
     min-height: 700px;
-
     margin: 0 auto;
 
     display: grid;
-
     grid-template-columns: 1fr 3fr 1fr;
-
     align-items: center;
 }
-
 
 .case-number {
     align-self: center;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .case-title h1 {
     margin: 20px 0 25px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(75px, 9vw, 145px);
     font-weight: 400;
-
     line-height: 0.8;
-
     letter-spacing: 0.01em;
 }
-
 
 .case-title p {
     margin: 0;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 11px;
-
     line-height: 1.5;
-
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .case-status {
     display: flex;
     flex-direction: column;
-
     gap: 22px;
 }
-
 
 .case-status div {
     display: flex;
     flex-direction: column;
-
     gap: 4px;
 }
 
-
 .case-status span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .case-status strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 11px;
     font-weight: 400;
-
     letter-spacing: 0.12em;
 }
 
@@ -819,9 +657,7 @@ a {
 
 .case-visual {
     width: 84%;
-
     aspect-ratio: 16 / 8;
-
     margin: 0 auto 170px;
 
     position: relative;
@@ -829,7 +665,6 @@ a {
     overflow: hidden;
 
     border: 1px solid var(--line);
-
     background: var(--surface);
 }
 
@@ -840,87 +675,67 @@ a {
 
 .case-section {
     width: var(--page);
-
     margin: 0 auto;
-
     padding: 120px 0;
 
     display: grid;
-
     grid-template-columns: 1fr 2fr 2fr;
 
     border-top: 1px solid var(--line);
 }
 
-
 .case-section-number {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .case-section-title {
     padding-right: 70px;
 }
 
-
 .case-section-title > span {
     display: block;
-
     margin-bottom: 15px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.22em;
 
     color: var(--accent);
 }
 
-
 .case-section-title h2 {
     margin: 0;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(36px, 4vw, 62px);
     font-weight: 400;
-
     line-height: 0.9;
-
     letter-spacing: 0.02em;
 }
-
 
 .case-section-content {
     max-width: 680px;
 }
 
-
 .case-section-content > p {
     margin: 0 0 35px;
-
     max-width: 600px;
 
     font-size: 13px;
     font-weight: 300;
-
     line-height: 1.9;
 
     color: var(--muted);
 }
 
-
 .case-section-content .large-copy {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(22px, 2.4vw, 36px);
     font-weight: 400;
-
     line-height: 1.25;
 
     color: var(--text);
@@ -933,13 +748,10 @@ a {
 
 .process-placeholder {
     width: 100%;
-
     aspect-ratio: 16 / 10;
-
     margin: 50px 0 15px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -953,24 +765,84 @@ a {
     background-size: 60px 60px;
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.2em;
 
     color: var(--muted);
 }
 
-
 .process-placeholder.tall {
     aspect-ratio: 4 / 3;
 }
 
-
 .caption {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px !important;
     letter-spacing: 0.16em;
+}
+
+
+/* ============================================================
+   ENGINEERING DRAWINGS
+============================================================ */
+
+.drawing-block {
+    width: 100%;
+    margin-top: 55px;
+}
+
+.drawing-image {
+    width: 100%;
+    padding: 18px;
+
+    overflow: hidden;
+
+    background: #edf5ff;
+    border: 1px solid var(--line);
+}
+
+.drawing-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.35s ease;
+}
+
+.drawing-image:hover img {
+    transform: scale(1.015);
+}
+
+.drawing-caption {
+    padding: 16px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.drawing-caption div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.drawing-caption span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+
+    color: var(--muted);
+}
+
+.drawing-caption strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
 }
 
 
@@ -982,53 +854,43 @@ a {
     margin-top: 55px;
 
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
 
     border-top: 1px solid var(--line);
 }
-
 
 .spec-grid div {
     padding: 18px 15px 18px 0;
 
     display: flex;
     flex-direction: column;
-
     gap: 6px;
 
     border-bottom: 1px solid var(--line);
 }
 
-
 .spec-grid div:nth-child(odd) {
     border-right: 1px solid var(--line);
 }
-
 
 .spec-grid div:nth-child(even) {
     padding-left: 20px;
 }
 
-
 .spec-grid span,
 .build-status span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .spec-grid strong,
 .build-status strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 12px;
     font-weight: 400;
-
     letter-spacing: 0.12em;
 }
 
@@ -1041,38 +903,29 @@ a {
     border-top: 1px solid var(--line);
 }
 
-
 .component-list > div {
     padding: 20px 0;
 
     display: grid;
-
     grid-template-columns: 50px 1.3fr 1fr;
-
     gap: 20px;
 
     border-bottom: 1px solid var(--line);
 }
 
-
 .component-list span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
 
     color: var(--muted);
 }
 
-
 .component-list strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 11px;
     font-weight: 400;
-
     letter-spacing: 0.12em;
 }
-
 
 .component-list p {
     margin: 0;
@@ -1093,27 +946,22 @@ a {
     border-top: 1px solid var(--line);
 }
 
-
 .mapping-list > div {
     padding: 18px 0;
 
     display: flex;
-
     justify-content: space-between;
 
     border-bottom: 1px solid var(--line);
 
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 10px;
     letter-spacing: 0.15em;
 }
 
-
 .mapping-list span {
     color: var(--muted);
 }
-
 
 .mapping-list strong {
     font-weight: 400;
@@ -1128,39 +976,30 @@ a {
     border-top: 1px solid var(--line);
 }
 
-
 .test-log > div {
     padding: 22px 0;
 
     display: grid;
-
     grid-template-columns: 110px 1fr 1fr;
-
     gap: 20px;
 
     border-bottom: 1px solid var(--line);
 }
 
-
 .test-log span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 8px;
     letter-spacing: 0.16em;
 
     color: var(--muted);
 }
 
-
 .test-log strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 11px;
     font-weight: 400;
-
     letter-spacing: 0.12em;
 }
-
 
 .test-log p {
     margin: 0;
@@ -1177,11 +1016,9 @@ a {
 
 .build-status {
     margin-top: 50px;
-
     padding: 18px 0;
 
     display: flex;
-
     justify-content: space-between;
 
     border-top: 1px solid var(--line);
@@ -1197,16 +1034,12 @@ a {
     padding-bottom: 160px;
 }
 
-
 .next-project {
     width: var(--page);
-
     margin: 0 auto 130px;
-
     padding: 35px 0;
 
     display: flex;
-
     align-items: flex-end;
     justify-content: space-between;
 
@@ -1214,26 +1047,20 @@ a {
     border-bottom: 1px solid var(--line);
 }
 
-
 .next-project span {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 9px;
     letter-spacing: 0.18em;
 
     color: var(--muted);
 }
 
-
 .next-project strong {
     font-family: 'Rajdhani', sans-serif;
-
     font-size: clamp(30px, 4vw, 58px);
     font-weight: 400;
-
     letter-spacing: 0.04em;
 }
-
 
 .next-project:hover strong {
     color: var(--accent);
@@ -1251,11 +1078,9 @@ a {
         display: none;
     }
 
-
     .hero-main {
         width: 78%;
     }
-
 
     .project-title,
     .project-image,
@@ -1264,61 +1089,47 @@ a {
         width: 88%;
     }
 
-
     .project-left .project-image,
     .project-right .project-image {
         margin-left: auto;
         margin-right: auto;
     }
 
-
     .project-bottom {
         grid-template-columns: 1fr 1fr;
     }
 
-
     .project-link {
         grid-column: 1 / -1;
-
         justify-self: start;
     }
-
 
     .about-layout {
         grid-template-columns: 1fr 2fr;
     }
 
-
     .about-links {
         grid-column: 2;
     }
-
 
     .case-hero {
         grid-template-columns: 1fr 4fr;
     }
 
-
     .case-status {
         grid-column: 2;
-
         flex-direction: row;
-
         margin-bottom: 60px;
     }
-
 
     .case-section {
         grid-template-columns: 1fr 3fr;
     }
 
-
     .case-section-content {
         grid-column: 2;
-
         margin-top: 60px;
     }
-
 }
 
 
@@ -1332,55 +1143,42 @@ a {
         --page: 90%;
     }
 
-
     .site-header {
         height: auto;
-
         min-height: 76px;
 
         flex-direction: column;
-
         align-items: flex-start;
         justify-content: center;
-
         gap: 8px;
 
         padding: 15px 0;
     }
 
-
     .navigation {
         font-size: 9px;
-
         gap: 8px;
     }
 
-
     .hero {
         height: auto;
-
         min-height: 650px;
 
         justify-content: flex-start;
     }
 
-
     .hero-main {
         width: 100%;
-
         padding-left: 30px;
     }
-
 
     .hero-main h1 {
         font-size: 54px;
     }
 
-
     .hero-index {
         display: none;
     }
-
 
     .hero-meta {
         left: 30px;
@@ -1389,54 +1187,43 @@ a {
         gap: 30px;
     }
 
-
     .work {
         padding-top: 70px;
     }
-
 
     .work-heading {
         margin-bottom: 100px;
     }
 
-
     .project {
         margin-bottom: 150px;
     }
 
-
     .project-title {
         width: 100%;
-
         margin: 45px 0;
 
         display: block;
     }
 
-
     .project-right .project-title {
         display: block;
     }
-
 
     .project-right .project-title p {
         text-align: left;
     }
 
-
     .project-title h2 {
-        font-size: 58px;
-
         margin-bottom: 25px;
-    }
 
+        font-size: 58px;
+    }
 
     .project-image {
         width: 100%;
-
         aspect-ratio: 4 / 5;
     }
-
 
     .project-bottom {
         width: 100%;
@@ -1444,26 +1231,21 @@ a {
         display: block;
     }
 
-
     .project-tags {
         margin: 30px 0;
     }
-
 
     .project-link {
         display: inline-block;
     }
 
-
     .about {
         padding-bottom: 100px;
     }
 
-
     .about-heading {
         margin-bottom: 70px;
     }
-
 
     .about-layout {
         width: 100%;
@@ -1471,20 +1253,16 @@ a {
         display: block;
     }
 
-
     .about-text {
         margin: 50px 0;
     }
 
-
     .footer {
         padding: 25px 0;
-
         gap: 20px;
 
         flex-wrap: wrap;
     }
-
 
     .case-hero {
         min-height: 620px;
@@ -1494,38 +1272,28 @@ a {
         padding: 110px 0 70px;
     }
 
-
     .case-number {
         margin-bottom: 60px;
     }
-
 
     .case-title h1 {
         font-size: 64px;
     }
 
-
     .case-status {
         margin-top: 70px;
 
         display: flex;
-
         flex-direction: row;
-
         flex-wrap: wrap;
-
         gap: 30px;
     }
 
-
     .case-visual {
         width: 90%;
-
         aspect-ratio: 4 / 5;
-
         margin-bottom: 100px;
     }
-
 
     .case-section {
         padding: 80px 0;
@@ -1533,29 +1301,23 @@ a {
         display: block;
     }
 
-
     .case-section-number {
         margin-bottom: 40px;
     }
 
-
     .case-section-title {
         padding: 0;
-
         margin-bottom: 60px;
     }
-
 
     .case-section-content {
         margin: 0;
     }
 
-
     .component-list > div,
     .test-log > div {
         display: block;
     }
-
 
     .component-list span,
     .component-list strong,
@@ -1564,32 +1326,33 @@ a {
     .test-log strong,
     .test-log p {
         display: block;
-
         margin-bottom: 8px;
     }
-
 
     .spec-grid {
         grid-template-columns: 1fr;
     }
 
-
     .spec-grid div:nth-child(odd) {
         border-right: none;
     }
-
 
     .spec-grid div:nth-child(even) {
         padding-left: 0;
     }
 
+    .drawing-image {
+        padding: 8px;
+    }
+
+    .drawing-caption {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 
     .next-project {
         align-items: flex-start;
-
         flex-direction: column;
-
         gap: 25px;
     }
-
 }
