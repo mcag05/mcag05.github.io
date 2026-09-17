@@ -1356,3 +1356,1129 @@ a {
         gap: 25px;
     }
 }
+/* ============================================================
+   O.W.L.S. / LIVE PROJECT PAGE
+============================================================ */
+
+
+/* ------------------------------------------------------------
+   CONCEPT HERO
+------------------------------------------------------------ */
+
+.owls-concept-visual {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(121, 207, 255, 0.07),
+            transparent 40%
+        ),
+        var(--surface);
+}
+
+.owls-concept-center {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.owls-concept-center strong {
+    margin-top: 35px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+}
+
+.owls-concept-center small {
+    margin-top: 9px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+
+    color: var(--muted);
+}
+
+
+/* ABSTRACT CLOUD SYMBOL */
+
+.concept-cloud {
+    width: 150px;
+    height: 70px;
+
+    position: relative;
+
+    opacity: 0.85;
+
+    filter: drop-shadow(
+        0 0 16px rgba(121, 207, 255, 0.22)
+    );
+}
+
+.concept-cloud span {
+    position: absolute;
+
+    display: block;
+
+    border: 1px solid var(--accent);
+
+    background: rgba(121, 207, 255, 0.025);
+}
+
+.concept-cloud span:nth-child(1) {
+    width: 75px;
+    height: 50px;
+
+    left: 38px;
+    bottom: 0;
+
+    border-radius: 50%;
+}
+
+.concept-cloud span:nth-child(2) {
+    width: 55px;
+    height: 40px;
+
+    left: 10px;
+    bottom: 0;
+
+    border-radius: 50%;
+}
+
+.concept-cloud span:nth-child(3) {
+    width: 60px;
+    height: 42px;
+
+    right: 5px;
+    bottom: 0;
+
+    border-radius: 50%;
+}
+
+
+/* ============================================================
+   PROJECT STATUS MODULE
+============================================================ */
+
+.owls-status-section {
+    width: var(--page);
+    margin: 0 auto 170px;
+
+    padding: 0 0 80px;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+
+/* STATUS HEADER */
+
+.status-heading {
+    padding: 22px 0 55px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-heading > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.status-heading span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+
+    color: var(--muted);
+}
+
+.status-heading strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+}
+
+.status-build {
+    text-align: right;
+}
+
+
+/* ============================================================
+   ANIMATED PROGRESS BAR
+============================================================ */
+
+.development-progress {
+    margin-bottom: 70px;
+}
+
+.progress-header {
+    margin-bottom: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.progress-header span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+
+    color: var(--muted);
+}
+
+.progress-header strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+
+    color: var(--accent);
+}
+
+.progress-header strong span {
+    font-size: inherit;
+    color: inherit;
+}
+
+.progress-track {
+    width: 100%;
+    height: 5px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: rgba(121, 207, 255, 0.08);
+
+    border-left: 1px solid var(--accent);
+    border-right: 1px solid var(--line);
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+
+    position: relative;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 8px rgba(121, 207, 255, 0.6),
+        0 0 20px rgba(121, 207, 255, 0.18);
+
+    transition:
+        width 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.progress-fill::after {
+    content: "";
+
+    position: absolute;
+
+    width: 40px;
+    height: 100%;
+
+    right: 0;
+    top: 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.65)
+    );
+}
+
+.progress-scale {
+    margin-top: 9px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 7px;
+    letter-spacing: 0.12em;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   CURRENT PHASE
+============================================================ */
+
+.current-phase {
+    margin-bottom: 65px;
+    padding: 28px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 50px;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.current-phase > span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+
+    color: var(--accent);
+}
+
+.current-phase > strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+}
+
+.current-phase > p {
+    margin: 0;
+
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   MILESTONES
+============================================================ */
+
+.milestone-list {
+    border-top: 1px solid var(--line);
+}
+
+.milestone {
+    min-height: 52px;
+
+    display: grid;
+    grid-template-columns: 70px 1fr 160px;
+    align-items: center;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.milestone-number {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+
+    color: var(--muted);
+}
+
+.milestone strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+.milestone-state {
+    justify-self: end;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.16em;
+}
+
+.milestone.complete .milestone-state {
+    color: var(--text);
+}
+
+.milestone.current {
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(121, 207, 255, 0.045),
+            transparent 45%
+        );
+}
+
+.milestone.current::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 8px rgba(121, 207, 255, 0.7);
+}
+
+.milestone.current .milestone-state {
+    color: var(--accent);
+}
+
+.milestone.queued {
+    color: var(--muted);
+}
+
+
+/* PULSING CURRENT DOT */
+
+.milestone-dot {
+    width: 5px;
+    height: 5px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 7px var(--accent);
+
+    animation: owlsPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes owlsPulse {
+
+    0%,
+    100% {
+        opacity: 0.45;
+        box-shadow:
+            0 0 3px rgba(121, 207, 255, 0.35);
+    }
+
+    50% {
+        opacity: 1;
+        box-shadow:
+            0 0 9px rgba(121, 207, 255, 0.9);
+    }
+
+}
+
+
+/* STATUS FOOTER */
+
+.status-footer {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.status-footer > div:last-child {
+    text-align: right;
+}
+
+.status-footer span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+
+    color: var(--muted);
+}
+
+.status-footer strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+
+/* ============================================================
+   DESIGN PRINCIPLES
+============================================================ */
+
+.design-principles {
+    margin-top: 55px;
+
+    border-top: 1px solid var(--line);
+}
+
+.design-principles > div {
+    padding: 22px 0;
+
+    display: grid;
+    grid-template-columns: 50px 1.3fr 1.5fr;
+    gap: 20px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.design-principles span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+
+    color: var(--muted);
+}
+
+.design-principles strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+}
+
+.design-principles p {
+    margin: 0;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   OPTICAL DIAGRAM
+============================================================ */
+
+.optical-diagram {
+    width: 100%;
+    height: 380px;
+    margin: 60px 0 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+
+    background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--surface);
+
+    background-size: 50px 50px;
+}
+
+.optical-screen {
+    position: absolute;
+
+    width: 40%;
+    height: 10px;
+
+    left: 10%;
+    bottom: 55px;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 12px rgba(121, 207, 255, 0.35);
+}
+
+.optical-screen span {
+    position: absolute;
+
+    left: 0;
+    top: 18px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.16em;
+
+    color: var(--muted);
+}
+
+.optical-glass {
+    position: absolute;
+
+    width: 230px;
+    height: 1px;
+
+    left: 36%;
+    top: 48%;
+
+    transform: rotate(-45deg);
+
+    transform-origin: center;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 8px rgba(121, 207, 255, 0.25);
+}
+
+.optical-glass span {
+    position: absolute;
+
+    top: -20px;
+    left: 65px;
+
+    transform: rotate(45deg);
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 7px;
+    letter-spacing: 0.14em;
+
+    color: var(--muted);
+}
+
+.optical-path {
+    position: absolute;
+
+    width: 1px;
+    height: 160px;
+
+    left: 42%;
+    bottom: 65px;
+
+    border-left: 1px dashed rgba(121, 207, 255, 0.45);
+}
+
+.optical-image {
+    position: absolute;
+
+    right: 17%;
+    top: 42%;
+
+    width: 115px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed var(--accent);
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 7px;
+    letter-spacing: 0.14em;
+
+    color: var(--accent);
+}
+
+.optical-viewer {
+    position: absolute;
+
+    right: 5%;
+    top: 47%;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   SYSTEM FLOW
+============================================================ */
+
+.system-flow {
+    margin: 55px 0;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.system-flow > div {
+    flex: 1;
+
+    min-height: 95px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid var(--line);
+}
+
+.system-flow span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+
+    color: var(--muted);
+}
+
+.system-flow strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.system-flow i {
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+
+    color: var(--accent);
+}
+
+
+/* ============================================================
+   CURRENT DEVELOPMENT
+============================================================ */
+
+.owls-current-section {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(121, 207, 255, 0.018),
+            transparent 50%
+        );
+}
+
+.current-development-badge,
+.future-status {
+    margin-bottom: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+
+    color: var(--accent);
+}
+
+.future-status {
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   PENDING ARTIFACT
+============================================================ */
+
+.pending-artifact {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    margin-top: 55px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+
+    background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--surface);
+
+    background-size: 55px 55px;
+}
+
+.pending-artifact > span {
+    margin-bottom: 10px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+
+    color: var(--accent);
+}
+
+.pending-artifact > strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+.pending-artifact > small {
+    margin-top: 12px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 7px;
+    letter-spacing: 0.15em;
+
+    color: var(--muted);
+}
+
+.pending-crosshair::before,
+.pending-crosshair::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    background: rgba(121, 207, 255, 0.12);
+}
+
+.pending-crosshair::before {
+    width: 1px;
+    height: 100%;
+
+    top: 0;
+}
+
+.pending-crosshair::after {
+    width: 100%;
+    height: 1px;
+
+    left: 0;
+}
+
+
+/* ============================================================
+   FUTURE PHASES
+============================================================ */
+
+.future-phase {
+    opacity: 0.78;
+}
+
+
+/* ============================================================
+   SOFTWARE STACK
+============================================================ */
+
+.software-stack {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--line);
+}
+
+.software-stack > div {
+    padding: 18px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.software-stack > div:nth-child(odd) {
+    border-right: 1px solid var(--line);
+}
+
+.software-stack > div:nth-child(even) {
+    padding-left: 20px;
+}
+
+.software-stack span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.16em;
+
+    color: var(--muted);
+}
+
+.software-stack strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+}
+
+
+/* ============================================================
+   DEVELOPMENT LOG
+============================================================ */
+
+.development-log {
+    margin-top: 55px;
+
+    border-top: 1px solid var(--line);
+}
+
+.log-entry {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.log-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.log-meta span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.14em;
+
+    color: var(--muted);
+}
+
+.log-meta strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+.log-status {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+
+    color: var(--accent);
+}
+
+.log-content h3 {
+    margin: 13px 0 18px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.log-content > p {
+    margin: 0;
+
+    max-width: 520px;
+
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+.log-next {
+    margin-top: 30px;
+    padding-top: 18px;
+
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    border-top: 1px solid var(--line);
+}
+
+.log-next span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+
+    color: var(--accent);
+}
+
+.log-next p {
+    margin: 0;
+
+    font-size: 11px;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   NEXT MILESTONE
+============================================================ */
+
+.owls-next-milestone {
+    width: var(--page);
+    margin: 0 auto;
+    padding: 120px 0;
+
+    position: relative;
+
+    border-top: 1px solid var(--line);
+}
+
+.owls-next-milestone > span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+
+    color: var(--accent);
+}
+
+.owls-next-milestone h2 {
+    margin: 30px 0 0;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(45px, 6vw, 90px);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+}
+
+.owls-next-milestone > div {
+    position: absolute;
+
+    right: 0;
+    bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.owls-next-milestone > div span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+
+    color: var(--muted);
+}
+
+.owls-next-milestone > div strong {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+
+/* ============================================================
+   OWLS MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+
+    .owls-status-section {
+        margin-bottom: 100px;
+    }
+
+    .status-heading {
+        padding-bottom: 40px;
+    }
+
+    .current-phase {
+        display: block;
+    }
+
+    .current-phase > span,
+    .current-phase > strong,
+    .current-phase > p {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .milestone {
+        grid-template-columns: 35px 1fr auto;
+        gap: 10px;
+    }
+
+    .milestone strong {
+        font-size: 9px;
+    }
+
+    .milestone-state {
+        font-size: 7px;
+    }
+
+    .status-footer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .status-footer > div:last-child {
+        text-align: left;
+    }
+
+    .design-principles > div {
+        display: block;
+    }
+
+    .design-principles span,
+    .design-principles strong,
+    .design-principles p {
+        display: block;
+        margin-bottom: 9px;
+    }
+
+    .optical-diagram {
+        height: 300px;
+    }
+
+    .optical-glass {
+        width: 170px;
+    }
+
+    .system-flow {
+        display: block;
+    }
+
+    .system-flow > div {
+        min-height: 75px;
+    }
+
+    .system-flow i {
+        width: 100%;
+        height: 30px;
+
+        transform: rotate(90deg);
+    }
+
+    .software-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .software-stack > div:nth-child(odd) {
+        border-right: none;
+    }
+
+    .software-stack > div:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .log-entry {
+        display: block;
+    }
+
+    .log-meta {
+        margin-bottom: 30px;
+    }
+
+    .pending-artifact {
+        aspect-ratio: 4 / 5;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .owls-next-milestone {
+        padding: 90px 0 150px;
+    }
+
+    .owls-next-milestone > div {
+        left: 0;
+        right: auto;
+        bottom: 75px;
+    }
+
+}
